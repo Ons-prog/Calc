@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-        stage(’Deploy to Kubernetes’){
+        stage('Deploy to Kubernetes'){
             steps{
                 sh '''
                     kubectl apply-f kubernetes/calc_deployment.yaml
